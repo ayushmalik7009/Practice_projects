@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Background Color</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #212121;
+            color: #fff;
+        }
+
+        #colorButton {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            height: 42px;
+        }
+
+        #colorButton:hover {
+            background-color: #0056b3;
+        }
+        div{
+            color: #212121;
+            background-color: white;
+            width: 32%;
+            height: 102px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        h1{
+            margin: 1px;
+        }
+    </style>
+</head>
+<body>
+     <div>
+
+        <h1 id="h1">background-color</h1>
+         <button id="colorButton">Click Me</button>
+        
+    </div>
+    
+</body>
+<script>
+    const btn = document.querySelector('#colorButton');
+    const body = document.querySelector('body');
+    const h1 = document.querySelector('h1');
+    function random(){
+        return Math.floor(Math.random()*350);
+    }
+    btn.addEventListener('click',(()=>{
+    body.style.backgroundColor = `rgb(${random()},${random()},${random()})`;
+        h1.innerText =  `rgb(${random()},${random()},${random()})`;
+        console.log(random());
+    }))
+    
+</script>
+</html>
