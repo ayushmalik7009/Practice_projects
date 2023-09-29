@@ -1,0 +1,42 @@
+/* #main{
+width: 15em;
+height: 10em;
+background-color: rgb(196, 214, 214);
+border-radius: 12px;
+padding: 12px;
+}
+body{
+    background-color: rgb(25, 128, 208);
+}
+#mai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+} */
+
+body{
+    background-color: rgb(25, 128, 208);
+}
+
+div{
+    width: 100%;
+    height: 100%;
+    
+}
+#main{
+    background-color: rgb(169, 150, 187);
+    width: 20%;
+    height: 20%;
+    margin: 20px
+}
+
+
+
+#mai{
+    display: flex;
+    flex-wrap: wrap;
+}
